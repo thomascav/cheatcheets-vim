@@ -1,9 +1,6 @@
 * {
   font-family: 'Source Code Pro' ;
   }
-/*a {
-  text-decoration:none ;
-}*/
 table, td {
 	border: 0.1em black solid;
   margin-left: 0.3em;
@@ -39,10 +36,11 @@ body {
 
 }
 ul li a:hover {
-  color : white;
+  color: blue;
   background-color: #515751;
 }
 #nav a {
 	display:inline-block;
 	margin: 0 1.8em;
+  color: white;
 }
