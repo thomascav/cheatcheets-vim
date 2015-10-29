@@ -3,14 +3,23 @@
   <head>
     <meta charset="utf-8">
       <link rel="stylesheet" href="css/vim.css" />
+      <link href='https://fonts.googleapis.com/css?family=Source+Code+Pro' rel='stylesheet' type='text/css'>
     <title>Cheatsheets Vim</title>
+
   </head>
   <body>
-    <div class="en-tete">
-          <h1>Quelques commandes utiles de Vim</h1>
+    <div id="en-tete">
+          <h1>Quelques commandes utiles de Vim -CheatSheets -</h1>
+          <span= "subtitle"></span>
     </div>
-
-<h3>Première chose avec Vim, une fois ouvert, nous avons envie de <strong>quitter</strong> !</h3>
+    <ul id="nav"><!--
+	--><li><a href="#quitter" style="text-decoration:none">Quitter</a></li><!--
+	--><li><a href="#insérer" style="text-decoration:none">Insertion</a></li><!--
+	--><li><a href="#déplacer" style="text-decoration:none">Déplacements</a></li><!--
+	--><li><a href="#supprimer" style="text-decoration:none">Supprimer</a></li><!--
+  --><li><a href="#annuler" style="text-decoration:none">Annuler</a></li>
+</ul>
+<h3>Première chose avec Vim, une fois ouvert, nous avons envie de <strong><a name="quitter">quitter</a></strong> !</h3>
     <table>
     	        <tbody>
     	            <tr>
@@ -27,7 +36,7 @@
     	            </tr>
     	        </tbody>
     	    </table>
-  <h3>Tapons du texte dans Vim</h3>
+  <h3><a name="insérer">Tapons du texte dans Vim</a></h3>
   <table>
             <tbody>
                 <tr>
@@ -38,9 +47,22 @@
                      <td>a</td>
                      <td>permet d'ajouter du texte</td>
                 </tr>
+                <tr>
+                     <td>p</td>
+                     <td>permet de coller du texte</td>
+                </tr>
+                <tr>
+                     <td>r <em>lettre</em></td>
+                     <td>permet de remplacer un caractère par  la lettre choisie</td>
+                </tr>
+                <tr>
+                     <td>ce</em></td>
+                     <td>permet de changer un mot à patir du caractère sur lequel est le curseur</td
+                </tr>
+
             </tbody>
     </table>
-  <h3>Déplaçons-nous dans Vim</h3>
+  <h3><a name="déplacer">Déplaçons-nous dans Vim</a></h3>
   <table>
     <tbody>
       <tr>
@@ -61,7 +83,7 @@
       </tr>
     </tbody>
   </table>
-  <h3>Supprimons du texte</h3>
+  <h3><a name="supprimer">Supprimons du texte</a></h3>
   <table>
             <tbody>
                 <tr>
@@ -92,6 +114,27 @@
                   <td>dd</td>
                   <td>effacer la ligne complète (peut correspondre à "couper")</td>
                 </tr>
+
+
             </tbody>
+      </table>
+      <h3><a name="annuler">L'annulation</a></h3>
+      <table>
+      	        <tbody>
+      	            <tr>
+      	                <td>u <em>min</em></td>
+      	                 <td>permet d'annuler la dernière commande</td>
+      	            </tr>
+      	            <tr>
+      	                 <td>u <em>maj</em></td>
+      	                 <td>permet d'annuler tous les changements sur une ligne</td>
+      	            </tr>
+      	            <tr>
+      	                 <td>ctrl r</td>
+      	                 <td>permet d'annuler l'annulation</td>
+      	            </tr>
+      	        </tbody>
+      	    </table>
+<p><em>Voici un lien vers le site dont je me suis inspiré :<a href="http://www.fprintf.net/vimCheatSheet.html" title ="http://www.fprintf.net/vimCheatSheet.html">ici</a></em></p>
   </body>
 </html>

@@ -1,5 +1,43 @@
+* {
+  font-family: 'Source Code Pro' ;
+  }
+/*a {
+  text-decoration:none ;
+}*/
 table, td {
 	border: 0.1em black solid;
-  margin-left: 0.5em;
+  margin-left: 0.3em;
   padding: 0.2em;
+  background-color: #EEF6FF ;
+  box-shadow: 0.06em 0.06em 0.75em #555;
+}
+body {
+  background-color: #B29F7E;
+  font-size: 1em;
+}
+#en-tete {
+  width: 95%;
+ background-color: #5B84B2;
+ border: solid #416D7F 0.12em;
+ padding: 0.7em;
+ text-align: center;
+ box-shadow: 0.06em 0.06em 0.75em #555;
+ margin-bottom: 1em;
+ margin-left: 1em;
+}
+#nav {
+	padding: 0; margin: 0;
+	text-align: center;
+  background-color: black;
+  color : white;
+  box-shadow: 0.06em 0.06em 0.75em #555;
+
+}
+#nav li {
+	display: inline;
+	list-style: none;
+}
+#nav a {
+	display:inline-block;
+	margin: 0 1.8em;
 }
