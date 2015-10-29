@@ -36,6 +36,11 @@ body {
 #nav li {
 	display: inline;
 	list-style: none;
+
+}
+ul li a:hover {
+  color : white;
+  background-color: #515751;
 }
 #nav a {
 	display:inline-block;
