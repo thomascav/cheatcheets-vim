@@ -7,7 +7,7 @@
   font-family: 'Source Code Pro' ;
   }
   a.top {
-    position: fixed;
+   position: fixed;
    bottom: 0em;
    right: 0em;
    background-color: black;
@@ -18,13 +18,8 @@
     max-width: 90px;
     height: 100%;
     height: auto;
-    float: left;
     margin: auto;
-    position: absolute;
-    top: -18.5em;
-    bottom: 0;
-    left: 1.01em;
-   }
+    float: left;
   }
 table, td {
 	border: 0.1em black solid;
