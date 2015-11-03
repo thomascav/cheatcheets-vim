@@ -2,6 +2,7 @@
 <html>
   <head>
     <meta charset="utf-8">
+    <!--liens vers le css, les polices google fonts, le favicon-->
       <link rel="stylesheet" href="css/vim.css" />
       <link href="https://fonts.googleapis.com/css?family=Source+Code+Pro" rel="stylesheet" type="text/css">
       <link rel="shortcut icon" href="favicon.ico" >
@@ -11,16 +12,17 @@
 
   </head>
   <body>
+    <!--en tete de la page-->
     <div id="en-tete">
           <img id="logovim" src="/home/thomascavalar/sites/lab/cheatsheets/vim/Vim-editor_logo.png" alt="logo vim" />
           <h1><a name="top">  Quelques commandes utiles de Vim -CheatSheets-</a></h1>
     </div>
-<ul id="nav"><!--
-	--><li><a href="#quitter" style="text-decoration:none">Quitter</a></li><!--
-	--><li><a href="#insérer" style="text-decoration:none">Insertion</a></li><!--
-	--><li><a href="#déplacer" style="text-decoration:none">Déplacements</a></li><!--
-	--><li><a href="#supprimer" style="text-decoration:none">Supprimer</a></li><!--
-  --><li><a href="#annuler" style="text-decoration:none">Annuler</a></li>
+<ul id="nav"><!--liste des liens ancres de la page, navigation-->
+	   <li><a href="#quitter" style="text-decoration:none">Quitter</a></li>
+	   <li><a href="#insérer" style="text-decoration:none">Insertion</a></li>
+	   <li><a href="#déplacer" style="text-decoration:none">Déplacements</a></li>
+	   <li><a href="#supprimer" style="text-decoration:none">Supprimer</a></li>
+     <li><a href="#annuler" style="text-decoration:none">Annuler</a></li>
 </ul>
 
 <h3>Première chose avec Vim, une fois ouvert, nous avons envie de <strong><a name="quitter">quitter</a></strong> !</h3>
@@ -38,7 +40,7 @@
     	            </tr>
     	            <tr>
     	                 <td>: wq <em>nom de dossier</em></td>
-    	                 <td>permet d'enregistrer dans le dossier spécifié et de quitter</td>
+    	                 <td>permet d'enregistrer dans le dossier spécifié et de quitter</td><!--first notion-->
     	            </tr>
     	        </tbody>
     	    </table>
@@ -55,7 +57,7 @@
                 </tr>
                 <tr>
                      <td>p</td>
-                     <td>permet de coller du texte</td>
+                     <td>permet de coller du texte</td>                  <!--second notion-->
                 </tr>
                 <tr>
                      <td>r <em>lettre</em></td>
@@ -81,7 +83,7 @@
       </tr>
       <tr>
         <td><em>n</em>w</td>
-        <td>déplacer le curseur de <em>n</em> mots vers l'avant</td>
+        <td>déplacer le curseur de <em>n</em> mots vers l'avant</td>      <!--third notion-->
       </tr>
       <tr>
         <td><em>n</em>e</td>
@@ -98,7 +100,7 @@
       </tr>
       <tr>
         <td>dw</td>
-        <td>permet de supprimer le mot (curseur au début du mot)</td>
+        <td>permet de supprimer le mot (curseur au début du mot)</td>     <!--fourth notion-->
       </tr>
       <tr>
          <td>d$</td>
@@ -110,7 +112,7 @@
       </tr>
       <tr>
          <td>de</td>
-         <td>effacer jusqu'au début du prochain mot</td>
+         <td>effacer jusqu'au début du prochain mot</td>           <!--fifth notion-->
       </tr>
       <tr>
         <td>d$</td>
@@ -133,7 +135,7 @@
       </tr>
       <tr>
         <td>u <em>maj</em></td>
-        <td>permet d'annuler tous les changements sur une ligne</td>
+        <td>permet d'annuler tous les changements sur une ligne</td>   <!--sixth notion-->
       </tr>
       <tr>
         <td>ctrl r</td>
@@ -141,6 +143,6 @@
       </tr>
     </tbody>
   </table>
-<p><em>Voici un lien vers le site dont je me suis inspiré :<a href="http://www.fprintf.net/vimCheatSheet.html" title ="http://www.fprintf.net/vimCheatSheet.html">ici</a></em></p>
+<p><em>Voici un lien vers le site dont je me suis inspiré :<a href="http://www.fprintf.net/vimCheatSheet.html" title ="http://www.fprintf.net/vimCheatSheet.html">ici</a></em></p>   <!--finspiration link-->
   </body>
 </html>
