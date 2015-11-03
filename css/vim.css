@@ -1,3 +1,8 @@
+@@media only screen and (max-width: 960px) {
+  .div {
+    width: auto;
+  }
+}
 * {
   font-family: 'Source Code Pro' ;
   }
@@ -21,7 +26,7 @@ body {
   font-size: 1em;
 }
 #en-tete {
-  width: 95%;
+ width: 95%;
  background-color: #5B84B2;
  border: solid #416D7F 0.12em;
  padding: 0.7em;
@@ -31,12 +36,14 @@ body {
  margin-left: 1em;
 }
 #nav {
+  width: 95%;
 	padding: 0; margin: 0;
 	text-align: center;
   background-color: black;
   color : white;
   box-shadow: 0.06em 0.06em 0.75em #555;
-
+  margin-left: auto;
+  margin-right: auto;
 }
 #nav li {
 	display: inline;
