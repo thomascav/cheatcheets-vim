@@ -1,4 +1,4 @@
-@@media only screen and (max-width: 960px) {
+@media only screen and (max-width: 960px) {
   .div {
     width: auto;
   }
@@ -13,6 +13,18 @@
    background-color: black;
    color: white;
    text-decoration: none;
+  }
+  #logovim {
+    max-width: 90px;
+    height: 100%;
+    height: auto;
+    float: left;
+    margin: auto;
+    position: absolute;
+    top: -18.5em;
+    bottom: 0;
+    left: 1.01em;
+   }
   }
 table, td {
 	border: 0.1em black solid;
