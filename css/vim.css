@@ -58,6 +58,7 @@ ul li a:hover {
     background-color: #515751;
 }
 #nav a {
+    font-size: 1.5em;
     display: inline-block;
     margin: 0 1.8em;
     color: white;
