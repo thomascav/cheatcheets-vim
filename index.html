@@ -1,148 +1,183 @@
 <!DOCTYPE html>
 <html>
-  <head>
+
+<head>
     <meta charset="utf-8">
     <!--liens vers le css, les polices google fonts, le favicon-->
-      <link rel="stylesheet" href="css/vim.css" />
-      <link href="https://fonts.googleapis.com/css?family=Source+Code+Pro" rel="stylesheet" type="text/css">
-      <link rel="shortcut icon" href="favicon.ico" >
-      <link rel="shortcut icon" href="favicon.ico">
-      <link rel="icon" type="image/gif">
+    <link rel="stylesheet" href="css/vim.css" />
+    <link href="https://fonts.googleapis.com/css?family=Source+Code+Pro" rel="stylesheet" type="text/css">
+    <link rel="shortcut icon" href="favicon.ico">
+    <link rel="shortcut icon" href="favicon.ico">
+    <link rel="icon" type="image/gif">
     <title>Cheatsheets Vim</title>
 
-  </head>
-  <body>
-    <!--en tete de la page-->
-     <div id="en-tete">
-          <img id="logovim" src="/home/thomascavalar/sites/lab/cheatsheets/vim/Vim-editor_logo.png" alt="logo vim" />
-          <h1><a name="top">  Quelques commandes utiles de Vim -CheatSheets-</a></h1>
-     </div>
-<ul id="nav"><!--liste des liens ancres de la page, navigation-->
-	   <li><a href="#quitter" style="text-decoration:none">Quitter</a></li>
-	   <li><a href="#insérer" style="text-decoration:none">Insertion</a></li>
-	   <li><a href="#déplacer" style="text-decoration:none">Déplacements</a></li>
-	   <li><a href="#supprimer" style="text-decoration:none">Supprimer</a></li>
-     <li><a href="#annuler" style="text-decoration:none">Annuler</a></li>
-</ul>
+</head>
 
-<h3>Première chose avec Vim, une fois ouvert, nous avons envie de <strong><a name="quitter">quitter</a></strong> !</h3>
-<a href="#top" class="top">Haut de page</a>
+<body>
+    <!--en tete de la page-->
+    <div id="en-tete">
+        <img id="logovim" src="/home/thomascavalar/sites/lab/cheatsheets/vim/Vim-editor_logo.png" alt="logo vim" />
+        <h1><a name="top">  Quelques commandes utiles de Vim -CheatSheets-</a></h1>
+    </div>
+    <ul id="nav">
+        <!--liste des liens ancres de la page, navigation-->
+        <li><a href="#quitter" style="text-decoration:none">Quitter</a></li>
+        <li><a href="#insérer" style="text-decoration:none">Insertion</a></li>
+        <li><a href="#déplacer" style="text-decoration:none">Déplacements</a></li>
+        <li><a href="#supprimer" style="text-decoration:none">Supprimer</a></li>
+        <li><a href="#annuler" style="text-decoration:none">Annuler</a></li>
+    </ul>
+
+    <h3>Première chose avec Vim, une fois ouvert, nous avons envie de
+        <strong><a name="quitter">quitter</a></strong> !</h3>
+    <a href="#top" class="top">Haut de page</a>
 
     <table>
-    	        <tbody>
-    	            <tr>
-    	                 <td>: q!</td>
-    	                 <td>permet de quitter Vim</td>
-    	            </tr>
-    	            <tr>
-    	                 <td>: wq</td>
-    	                 <td>permet de quitter en sauvegardant</td>
-    	            </tr>
-    	            <tr>
-    	                 <td>: wq <em>nom de dossier</em></td>
-    	                 <td>permet d'enregistrer dans le dossier spécifié et de quitter</td><!--first notion-->
-    	            </tr>
-    	        </tbody>
-    	    </table>
-  <h3><a name="insérer">Tapons du texte dans Vim</a></h3>
-  <table>
+        <tbody>
+            <tr>
+                <td>: q!</td>
+                <td>permet de quitter Vim</td>
+            </tr>
+            <tr>
+                <td>: wq</td>
+                <td>permet de quitter en sauvegardant</td>
+            </tr>
+            <tr>
+                <td>: wq
+                    <em>nom de dossier</em>
+                </td>
+                <td>permet d'enregistrer dans le dossier spécifié et de quitter</td>
+                <!--first notion-->
+            </tr>
+        </tbody>
+    </table>
+    <h3><a name="insérer">Tapons du texte dans Vim</a></h3>
+    <table>
+        <tbody>
+            <tr>
+                <td>i</td>
+                <td>permet d'insérer du texte</td>
+            </tr>
+            <tr>
+                <td>a</td>
+                <td>permet d'ajouter du texte</td>
+            </tr>
+            <tr>
+                <td>p</td>
+                <td>permet de coller du texte</td>
+                <!--second notion-->
+            </tr>
+            <tr>
+                <td>r
+                    <em>lettre</em>
+                </td>
+                <td>permet de remplacer un caractère par la lettre choisie</td>
+            </tr>
+            <tr>
+                <td>
+                    <em>ce</em>
+                </td>
+                <td>permet de changer un mot à patir du caractère sur lequel est le curseur</td>
+            </tr>
+
+        </tbody>
+    </table>
+    <h3><a name="déplacer">Déplaçons-nous dans Vim</a></h3>
+    <table>
+        <div>
+
             <tbody>
                 <tr>
-                     <td>i</td>
-                     <td>permet d'insérer du texte</td>
+                    <td>
+                        <em>h, k, l, j</em>
+                    </td>
+                    <td>se déplacer (respectivement) à
+                        <em>gauche, haut, droite, bas</em>
+                    </td>
                 </tr>
                 <tr>
-                     <td>a</td>
-                     <td>permet d'ajouter du texte</td>
-                </tr>
-                <tr>
-                     <td>p</td>
-                     <td>permet de coller du texte</td>                  <!--second notion-->
-                </tr>
-                <tr>
-                     <td>r <em>lettre</em></td>
-                     <td>permet de remplacer un caractère par  la lettre choisie</td>
-                </tr>
-                <tr>
-                     <td><em>ce</em></td>
-                     <td>permet de changer un mot à patir du caractère sur lequel est le curseur</td>
-                </tr>
-
-            </tbody>
-    </table>
-  <h3><a name="déplacer">Déplaçons-nous dans Vim</a></h3>
-  <table>
-        <tbody>
-              <tr>
-                    <td><em>h, k, l, j</em></td>
-                    <td>se déplacer (respectivement) à <em>gauche, haut, droite, bas</em></td>
-              </tr>
-              <tr>
                     <td>0</td>
                     <td>déplacer le curseur en début de ligne</td>
-              </tr>
-              <tr>
-                    <td><em>n</em>w</td>
-                    <td>déplacer le curseur de <em>n</em> mots vers l'avant</td>      <!--third notion-->
-              </tr>
-              <tr>
-                    <td><em>n</em>e</td>
-                    <td>déplacer le curseur à la fin du <em>nième</em> mot vers l'avant</td>
-              </tr>
-        </tbody>
-   </table>
-  <h3><a name="supprimer">Supprimons du texte</a></h3>
-  <table>
-      <tbody>
-              <tr>
-                  <td>x</td>
-                  <td>permet de supprimer une lettre après le curseur</td>
-              </tr>
-              <tr>
-                  <td>dw</td>
-                  <td>permet de supprimer le mot (curseur au début du mot)</td>     <!--fourth notion-->
-              </tr>
-              <tr>
-                  <td>d$</td>
-                  <td>permet de supprimer du texte jusqu'à la fin de la ligne (après le mot où se trouve le curseur)</td>
-              </tr>
-              <tr>
-                  <td>dw</td>
-                  <td>permet de supprimer jusque la fin du mot courant</td>
-              </tr>
-              <tr>
-                  <td>de</td>
-                  <td>effacer jusqu'au début du prochain mot</td>           <!--fifth notion-->
-              </tr>
-              <tr>
-                  <td>d$</td>
-                  <td>effacer jusqu'à la fin de la ligne</td>
-              </tr>
-              <tr>
-                  <td>dd</td>
-                  <td>effacer la ligne complète (peut correspondre à "couper")</td>
-              </tr>
-
-
-      </tbody>
+                </tr>
+                <tr>
+                    <td>
+                        <em>n</em>w</td>
+                    <td>déplacer le curseur de
+                        <em>n</em> mots vers l'avant</td>
+                    <!--third notion-->
+                </tr>
+                <tr>
+                    <td>
+                        <em>n</em>e</td>
+                    <td>déplacer le curseur à la fin du
+                        <em>nième</em> mot vers l'avant</td>
+                </tr>
+            </tbody>
+        </div>
     </table>
-  <h3><a name="annuler">L'annulation</a></h3>
+    <h3><a name="supprimer">Supprimons du texte</a></h3>
     <table>
-     <tbody>
-              <tr>
-                  <td>u <em>min</em></td>
-                  <td>permet d'annuler la dernière commande</td>
-              </tr>
-              <tr>
-                  <td>u <em>maj</em></td>
-                  <td>permet d'annuler tous les changements sur une ligne</td>   <!--sixth notion-->
-              </tr>
-              <tr>
-                  <td>ctrl r</td>
-                  <td>permet d'annuler l'annulation</td>
-              </tr>
-    </tbody>
-  </table>
-<p><em>Voici un lien vers le site dont je me suis inspiré :<a href="http://www.fprintf.net/vimCheatSheet.html" title ="http://www.fprintf.net/vimCheatSheet.html">ici</a></em></p>   <!--finspiration link-->
-  </body>
+        <tbody>
+            <tr>
+                <td>x</td>
+                <td>permet de supprimer une lettre après le curseur</td>
+            </tr>
+            <tr>
+                <td>dw</td>
+                <td>permet de supprimer le mot (curseur au début du mot)</td>
+                <!--fourth notion-->
+            </tr>
+            <tr>
+                <td>d$</td>
+                <td>permet de supprimer du texte jusqu'à la fin de la ligne (après le mot où se trouve le curseur)</td>
+            </tr>
+            <tr>
+                <td>dw</td>
+                <td>permet de supprimer jusque la fin du mot courant</td>
+            </tr>
+            <tr>
+                <td>de</td>
+                <td>effacer jusqu'au début du prochain mot</td>
+                <!--fifth notion-->
+            </tr>
+            <tr>
+                <td>d$</td>
+                <td>effacer jusqu'à la fin de la ligne</td>
+            </tr>
+            <tr>
+                <td>dd</td>
+                <td>effacer la ligne complète (peut correspondre à "couper")</td>
+            </tr>
+
+
+        </tbody>
+    </table>
+    <h3><a name="annuler">L'annulation</a></h3>
+    <table>
+        <tbody>
+            <tr>
+                <td>u
+                    <em>min</em>
+                </td>
+                <td>permet d'annuler la dernière commande</td>
+            </tr>
+            <tr>
+                <td>u
+                    <em>maj</em>
+                </td>
+                <td>permet d'annuler tous les changements sur une ligne</td>
+                <!--sixth notion-->
+            </tr>
+            <tr>
+                <td>ctrl r</td>
+                <td>permet d'annuler l'annulation</td>
+            </tr>
+        </tbody>
+    </table>
+    <p>
+        <em>Voici un lien vers le site dont je me suis inspiré :<a href="http://www.fprintf.net/vimCheatSheet.html" title="http://www.fprintf.net/vimCheatSheet.html">ici</a></em>
+    </p>
+    <!--finspiration link-->
+</body>
+
 </html>
